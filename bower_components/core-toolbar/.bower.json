@@ -1,0 +1,18 @@
+{
+  "name": "core-toolbar",
+  "private": true,
+  "dependencies": {
+    "core-icon-button": "Polymer/core-icon-button#master",
+    "core-media-query": "Polymer/core-media-query#master"
+  },
+  "homepage": "https://github.com/Polymer/core-toolbar",
+  "_release": "d3c5a7f453",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "d3c5a7f4539b9c64a6295522b2b8a6fefb04ba3f"
+  },
+  "_source": "git://github.com/Polymer/core-toolbar.git",
+  "_target": "master",
+  "_originalSource": "Polymer/core-toolbar"
+}
