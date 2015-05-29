@@ -1,8 +1,8 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>  
   <meta name="viewport" content="width=device-width, user-scalable=no">  
-  <title>d-calendar Demo</title> 
+  <title>mf-calendar Demo</title> 
   <link rel="import" href="../bower_components/core-input/core-input.html"> 
   <link rel="import" href="mf-calendar.html">
 
@@ -14,7 +14,7 @@
       -webkit-touch-callout: none;
       background: #CFD8DC;
     }
-    d-calendar {
+    mf-calendar {
       margin: 0px 12px;
       box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
     }
@@ -60,8 +60,8 @@
   <template id="sandbox" is="auto-binding">
 
     <div layout horizontal center center-justified>
-      <d-calendar selectedDate="{{selectedDate}}" date="{{date}}" class="light-theme" on-d-calendar-date-selected="{{dateSelected}}"></d-calendar>
-      <d-calendar selectedDate="{{selectedDate}}"></d-calendar>
+      <mf-calendar selectedDate="{{selectedDate}}" date="{{date}}" class="light-theme" on-mf-calendar-date-selected="{{dateSelected}}"></mf-calendar>
+      <mf-calendar selectedDate="{{selectedDate}}"></mf-calendar>
     </div>
 
     <div id="dateDisplay">
@@ -111,7 +111,7 @@
     sandbox.selectColor = function(ev, detail, sender){
       var selectedColor = sender.getAttribute('color');
       sandbox.selectedColor = selectedColor;
-      CoreStyle.g.dCalendar.accentColor = selectedColor;
+      CoreStyle.g.mfCalendar.accentColor = selectedColor;
     }
 
     sandbox.selectedColor = '#2196F3';

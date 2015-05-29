@@ -85,21 +85,21 @@ Fired when an item element is tapped.
                 <div class="weekday-name">{{weekday}}</div>
               </template>
             </div>
-            <d-calendar-weeks
+            <mf-calendar-weeks
               date="{{viewingDate}}"
               selectedDate="{{selectedDate}}"
-              on-d-calendar-date-selected="{{dateSelectAction}}">
-            </d-calendar-weeks>
+              on-mf-calendar-date-selected="{{dateSelectAction}}">
+            </mf-calendar-weeks>
           </div>
 
         </section>
 
         <section name="yearView">
           <div cross-fade>
-            <d-calendar-years
-              on-d-calendar-year-selected="{{yearSelectAction}}"
+            <mf-calendar-years
+              on-mf-calendar-year-selected="{{yearSelectAction}}"
               viewingYear="{{viewingYear}}">
-            </d-calendar-years>
+            </mf-calendar-years>
           </div>
         </section>
 
@@ -297,7 +297,7 @@ Fired when an item element is tapped.
         this.date = this.selectedDate;
 
         this.focus();
-        this.fire('d-calendar-date-selected', {date: this.selectedDate})
+        this.fire('mf-calendar-date-selected', {date: this.selectedDate})
       },
 
       viewingDateChanged: function(olddate, newdate) {
